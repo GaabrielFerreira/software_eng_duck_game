@@ -33,6 +33,20 @@ public class Main {
 		// 5.3 Pato atleta trocando comportamento em tempo de execucao
 		atleta.setComportamentoPulo(new PuloDesordenado());
 		System.out.println(atleta.mostrar() + " agora louco: " + atleta.comportamento_pulo());
+
+		// Parte C
+		System.out.println("\n--- Parte C ---");
+
+		Coelho coelho = new Coelho();
+		System.out.println(coelho.mostrar());
+		System.out.println(coelho.pular());
+
+		coelho.setComportamentoPulo(new puloLento());
+		System.out.println(coelho.mostrar() + " agora com pulo lento: " + coelho.pular());
+
+		Pato bravo = new Pato_Bravo();
+		System.out.println(bravo.mostrar());
+		System.out.println(bravo.comportamento_grasnar());
 	}
 
 }
